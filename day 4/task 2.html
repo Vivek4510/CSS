@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color1:maroon;
+            --color2:burlywood;
+        }
+        body{
+            background-color: wheat;
+        }
+       table{
+        width:720px;
+        height:720px;
+        border-collapse: collapse;
+       }
+       .odd td:nth-child(odd), .even td:nth-child(even){
+        background-color: var(--color1);
+       }
+       .odd td:nth-child(odd):hover, .even td:nth-child(even):hover{
+        background-color: brown;
+       }
+       .even td:nth-child(odd), .odd td:nth-child(even){
+        background-color: var(--color2);
+       }
+       .even td:nth-child(odd):hover, .odd td:nth-child(even):hover{
+        background-color: blue;
+       }
+       .a{
+        font-size: 50px;
+       }
+       td{
+        text-align: center;
+        width: 80px;
+        height: 80px;
+       }
+      
+
+    </style>
+</head>
+<body>
+    <center>
+    <table border="">
+        <tr class="odd">
+            <td class="a">&#9820;</td>
+            <td class="a">&#9822;</td>
+            <td class="a">&#9821;</td>
+            <td class="a">&#9819;</td>
+            <td class="a">&#9818</td>
+            <td class="a">&#9821;</td>
+            <td class="a">&#9822;</td>
+            <td class="a">&#9820;</td>
+            \
+        </tr>
+        <tr class="even">
+            <td class="a">&#9823;</td>
+            <td class="a">&#9823;</td>
+            <td class="a">&#9823;</td>
+            <td class="a">&#9823;</td>
+            <td class="a">&#9823;</td>
+            <td class="a">&#9823;</td>
+            <td class="a">&#9823;</td>
+            <td class="a">&#9823;</td>
+        </tr>
+        <tr class="odd">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="even">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="odd">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="even">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr class="odd">
+            <td class="a">&#9817;</td>
+            <td class="a">&#9817;</td>
+            <td class="a">&#9817;</td>
+            <td class="a">&#9817;</td>
+            <td class="a">&#9817;</td>
+            <td class="a">&#9817;</td>
+            <td class="a">&#9817;</td>
+            <td class="a">&#9817;</td>
+        </tr>
+        <tr class="even">
+            <td class="a">&#9814;</td>
+            <td class="a">&#9816;</td>
+            <td class="a">&#9815;</td>
+            <td class="a">&#9813;</td>
+            <td class="a">&#9812;</td>
+            <td class="a">&#9815;</td>
+            <td class="a">&#9816;</td>
+            <td class="a">&#9814;</td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
