@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropbtn {
+            background-color: rgb(33, 110, 138);
+            color: white;
+            border: none;
+          }
+  
+        .navbar {
+            display: inline-block;
+        }
+  
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(19, 155, 162);
+            min-width: 95px;
+            z-index: 1;
+        }
+  
+        .dropdown-content a {
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+        }
+  
+        .dropdown-content a:hover {
+            background-color: grey;
+        }
+  
+        .navbar:hover .dropdown-content {
+            display: block;
+        }
+          
+        .navbar:hover .dropbtn {
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <button class="dropbtn">B R Architects</button>
+        <div class="dropdown-content">
+          <a href="#main2">Projects</a>
+          <a href="#main3">About</a>
+          <a href="#main4">Blog</a>
+          <a href="#main5">Contact</a>
+        </div>
+      </div>
+</body>
+</html>
