@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+AR:wght@100..400&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+AR:wght@100..400&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+AR:wght@100..400&family=Sankofa+Display&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color:rgb(4, 4, 30);
+        }
+        .sm1{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: right;
+            background-color: rgb(125, 123, 123);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+
+        .sm2{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: left;
+            background-color: rgb(118, 164, 124);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+
+        .sm3{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: right;
+            background-color: rgb(77, 166, 187);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm4{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: left;
+            background-color: rgb(210, 166, 173);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm5{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(162, 162, 56);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm6{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: lowercase;
+            background-color: rgb(208, 208, 136);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm7{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: lowercase;
+            background-color: rgb(185, 120, 120);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm8{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: rgb(193, 161, 211);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm9{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            letter-spacing: 5px;
+            background-color: rgb(212, 142, 172);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm10{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            letter-spacing: 5px;
+            background-color: rgb(173, 173, 224);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm11{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            letter-spacing: 5px;
+            background-color: rgb(220, 80, 126);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm12{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            letter-spacing: 5px;
+            background-color: #34568B;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm13{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: 2px solid black underline;
+            background-color: rgb(197, 120, 93);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm14{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: 2px double red line-through;
+            background-color: rgb(229, 140, 229);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm15{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: 2px wavy blue overline;
+            background-color: #b3da79;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm16{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: 2px dashed green underline;
+            background-color: rosybrown;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm17{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+            background-color: #F7CAC9;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm18{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-shadow: 2px 2px 2px brown,3px 3px 2px maroon;
+            background-color: seagreen;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm19{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-shadow: 2px 2px 2px green;
+            background-color: sandybrown;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm20{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            text-shadow: 2px 2px 2px red;
+            background-color: sienna;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm21{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: cursive;
+            background-color: skyblue;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm21:hover{
+            background-color: #34568B;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .sm22{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: cursive;
+            background-color: slateblue;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm22:hover{
+            background-color: aqua;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .sm23{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: cursive;
+            background-color: salmon;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm23:hover{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: orange;
+        }
+        .sm24{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: cursive;
+            background-color: slategray;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm24:hover{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: silver;
+        }
+        .sm25{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+            background-color: rgb(156, 105, 207);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm26{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+            background-color: bisque;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm27{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+            background-color: burlywood;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm28{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: "Edu AU VIC WA NT Hand", cursive;
+            background-color: rgb(255, 217, 0);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm25:hover, .sm26:hover, .sm27:hover, .sm28:hover{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .sm29{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: "Playwrite AR", cursive;
+            background-color: rgb(207, 52, 52);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm30{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: "Playwrite AR", cursive;
+            background-color: rgb(129, 199, 193);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm31{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: "Playwrite AR", cursive;
+            background-color: aquamarine;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm32{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: "Playwrite AR", cursive;
+            background-color: rgb(193, 161, 211);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm29:hover, .sm30:hover, .sm31:hover, .sm32:hover{
+            font-family: "Teko", sans-serif;
+        }
+        .sm33{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: "Dancing Script", cursive;
+            background-color: rgb(211, 147, 158);
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm34{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: "Dancing Script", cursive;
+            background-color: wheat;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm35{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: "Dancing Script", cursive;
+            background-color: plum;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm36{
+            display: inline-block;
+            box-sizing: border-box;
+            border: 2px solid black;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: "Dancing Script", cursive;
+            background-color: peru;
+            margin: 50px 20px 30px 50px;
+            border-radius: 10px;
+            height: 100px;
+            width: 20%;
+        }
+        .sm33:hover, .sm34:hover, .sm35:hover, .sm36:hover{
+            font-family: "Sankofa Display", sans-serif;
+        }
+        .he1{
+            text-align: center;
+            color: green;
+            background-color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="he1">
+        <h1><u>W3 SCHOOLS</u></h1>
+    </div>
+
+    <span class="sm1">
+        <h1>R</h1>
+    </span>
+
+    <span class="sm2">
+        <h1>Kotlin</h1>
+    </span>
+
+    <span class="sm3">
+        <h1>Node.js</h1>
+    </span>
+
+    <span class="sm4">
+        <h1>React</h1>
+    </span>
+
+    <span class="sm5">
+        <h1>JSON</h1>
+    </span>
+
+    <span class="sm6">
+        <h1>Vue</h1>
+    </span>
+
+    <span class="sm7">
+        <h1>MySQL</h1>
+    </span>
+
+    <span class="sm8">
+        <h1>XML</h1>
+    </span>
+
+    <span class="sm9">
+        <h1>Sass</h1>
+    </span>
+
+    <span class="sm10">
+        <h1>Icons</h1>
+    </span>
+
+    <span class="sm11">
+        <h1>RWD</h1>
+    </span>
+
+    <span class="sm12">
+        <h1>Graphics</h1>
+    </span>
+
+    <span class="sm13">
+        <h1>SVG</h1>
+    </span>
+
+    <span class="sm14">
+        <h1>Canvas</h1>
+    </span>
+
+    <span class="sm15">
+        <h1>Raspberry pi</h1>
+    </span>
+
+    <span class="sm16">
+        <h1>Cyber Security</h1>
+    </span>
+
+    <span class="sm17">
+        <h1>Colors</h1>
+    </span>
+
+    <span class="sm18">
+        <h1>Git</h1>
+    </span>
+
+    <span class="sm19">
+        <h1>Matplotlib</h1>
+    </span>
+
+    <span class="sm20">
+        <h1>NumPy</h1>
+    </span>
+
+    <span class="sm21">
+        <h1>Pandas</h1>
+    </span>
+
+    <span class="sm22">
+        <h1>SciPy</h1>
+    </span>
+
+    <span class="sm23">
+        <h1>ASP</h1>
+    </span>
+
+    <span class="sm24">
+        <h1>AngularJS</h1>
+    </span>
+
+    <span class="sm25">
+        <h1>AppML</h1>
+    </span>
+
+    <span class="sm26">
+        <h1>GO</h1>
+    </span>
+
+    <span class="sm27">
+        <h1>TypeScript</h1>
+    </span>
+
+    <span class="sm28">
+        <h1>Django</h1>
+    </span>
+
+    <span class="sm29">
+        <h1>MongoDB</h1>
+    </span>
+
+    <span class="sm30">
+        <h1>Statistics</h1>
+    </span>
+
+    <span class="sm31">
+        <h1>Data Science</h1>
+    </span>
+
+    <span class="sm32">
+        <h1>Typing Speed</h1>
+    </span>
+
+    <span class="sm33">
+        <h1>How To</h1>
+    </span>
+
+    <span class="sm34">
+        <h1>Code Game</h1>
+    </span>
+
+    <span class="sm35">
+        <h1>Spaces</h1>
+    </span>
+
+    <span class="sm36">
+        <h1>PostgreSQL</h1>
+    </span>
+</body>
+</html>
