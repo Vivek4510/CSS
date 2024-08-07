@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0px;
+        }
+        .nav{
+            width: 100%;
+            height: 40px;
+            background-color: white;
+            top: 0px;
+            position: sticky;
+            padding-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            z-index: 5;
+        }
+        .title{
+            letter-spacing: 3px;
+            font-size:large;
+            margin-left: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .nav-contents{
+            display: flex;
+            column-gap: 20px;
+            font-size: large;
+            margin-right: 20px;
+            letter-spacing: 3px;
+        }
+        .burger{
+            width: 100%;
+            height: 99vh;
+            background-image: url(./hamburger.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 3em;
+            display: flex;
+            flex-direction: column-reverse;
+            letter-spacing: 3px;
+        }
+        .table1{
+            width: 70%;
+            height: 99vh;
+            margin: auto;
+            display: flex;
+        }
+        .img1{
+            height: 90vh;
+            width: 50%;
+            margin-top: 9vh;
+        }
+        .txt1{
+            margin-top: 12vh;
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            margin-left: 30px;
+        }
+        .t1{
+            text-align: center;
+            letter-spacing: 4px;
+            font-size: 3em;
+        }
+        .t2{
+            text-align: center;
+            letter-spacing: 4px;
+            font-size: x-large;
+            margin-top: 8vh;
+        }
+        .info1{
+            font-size: large;
+            margin-top: 5vh;
+        }
+        .table2{
+            width: 70%;
+            height: 99vh;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20vh;
+            
+        }
+        .img2{
+            position: relative;
+            right: 0px;
+            height: 90vh;
+            width: 47%;
+            margin-top: 9vh;
+        }
+        .txt2{
+            margin-top: 12vh;
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            width: 50%;
+            height: 87vh;
+        }
+        .t3{
+            text-align: center;
+            letter-spacing: 4px;
+            font-size: 3em;
+        }
+        .dish{
+            letter-spacing: 6px;
+            margin-top: 5vh;
+            font-size: large;
+        }
+        .desc{
+            margin-top: 3vh;
+        }
+        .table3{
+            width: 70%;
+            height: 90vh;
+            margin: auto;
+            justify-content: space-between;
+            margin-top: 20vh;
+        }
+        .form{
+            margin-top: 25px;
+            opacity: 0.7;
+        }
+        .footer{
+            height: 15vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(128, 128, 128, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <span class="title">Gourmet au Catering</span>
+        <div class="nav-contents">
+            <span>About</span>
+            <span>Menu</span>
+            <span>Contact</span>
+        </div>
+    </div>
+
+    <div class="burger">
+        <span style="margin-left:30px; margin-bottom:30px">Le Catering</span>
+    </div>
+
+    <div class="table1">
+        <img src="./tablesetting.jpg" alt="" class="img1">
+        <div class="txt1">
+            <span class="t1">About Catering</span>
+            <span class="t2">Tradition since 1889</span>
+            <span class="info1">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.</span>
+            <span class="info1">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
+        </div>
+    </div>
+
+    <div class="table2">
+        <div class="txt2">
+            <span class="t3">Our menu</span>
+            <span class="dish">Bread Basket</span>
+            <span class="desc">Assortment of fresh baked fruit breads and muffins 5.50</span>
+            <span class="dish">Honey Almonds Granola with Fruits</span>
+            <span class="desc">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</span>
+            <span class="dish">Belgian Waffle</span>
+            <span class="desc">Vanilla flavored batter with malted flour 7.50</span>
+            <span class="dish">Scrambled eggs</span>
+            <span class="desc">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</span>
+            <span class="dish">Blueberry Pancakes</span>
+            <span class="desc">With syrup, butter and lots of berries 8.50</span>
+        </div>
+        <img src="./tablesetting2.jpg" alt="" class="img2">
+    </div>
+
+    <div class="table3">
+        <span class="t3">Contact</span>
+        <p style="margin-top: 8vh;">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+        <h3 style="color: rgb(10, 184, 223);">Catering Service, 42nd Living St, 43043 New York, NY</h3>
+        <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+        <p class="form">Name</p><hr>
+        <p class="form">How many people</p><hr>
+        <p class="form">Date and Time</p><hr>
+        <p class="form">Message/Special Requirements</p><hr>
+        <button style="height: 30px; margin-top:5vh">Send Message</button>
+    </div>
+
+    <div class="footer">
+        <span>Powered by <a href="https://www.w3schools.com/css/default.asp" style="color:black;">W3.CSS</a></span>
+    </div>
+</body>
+</html>
