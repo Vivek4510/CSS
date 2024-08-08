@@ -40,6 +40,7 @@
             background-image: url(./hamburger.jpg);
             background-repeat: no-repeat;
             background-size: cover;
+            
             font-size: 3em;
             display: flex;
             flex-direction: column-reverse;
@@ -75,7 +76,7 @@
             margin-top: 8vh;
         }
         .info1{
-            font-size: large;
+            font-size: 18px;
             margin-top: 5vh;
         }
         .table2{
@@ -138,20 +139,136 @@
             text-decoration: none;
             color: black;
         }
+        .bpic{
+            display: none;
+        }
+        .dropdown-content{
+            display: none;
+        }
+        @media screen and (max-width:475px){
+            body{
+                box-sizing: border-box;
+                margin: 0px;
+            }
+
+            .burger{
+                height: 40vh;
+                width: 100vw;
+                background-repeat:no no-repeat;
+                background-position: center;
+                background-size:cover;
+                font-size: large;
+                font-weight: bold;
+            }
+            .burg{
+                margin-left: 15px;
+                margin-bottom: 15px;
+            }
+            .table1{
+                flex-direction: column-reverse;
+                width: 100%;
+                padding-top: 4vh;
+                height: 150vh;
+            }
+            .info1{
+                font-size: medium;
+                margin: 3vh;
+            }
+            .t1,.t2{
+                font-size: medium;
+                font-weight: bold;
+                margin: 1vh;
+            }
+            .bpic{
+                display: inline-block;
+                height: 4vh;
+                width: 30px;
+            }
+            .nav-contents{
+                display: none;
+            }
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                
+            }
+            .dropdown-content a{
+                color: black;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                background-color: grey;
+                padding: 2px 5px;
+                border-radius: 15%;
+                margin-top: 5px;
+            }
+            .dropdown-content a:hover{
+                background-color: beige;
+            }
+            .navbar:hover .dropdown-content{
+                display: block;
+            }
+            .nav{
+             display: flex;
+             justify-content: space-around;
+            }
+            .txt1{
+                margin-left: 0px;
+            }
+            .img1{
+                width: 100%;
+                border-radius: 5%;
+                height: 50%;
+            }
+            .table2{
+                flex-direction: column;
+                text-align: center;
+                margin-top: 0vh;
+                width: 100%;
+                height: 180vh;
+            }
+            .txt2{
+                width: 100%;
+            }
+            .t3{
+                margin-top: 0vh;
+            }
+            .img2{
+                width: 100%;
+            }
+            .table3{
+                width: 100%;
+                height: 100vh;
+            }
+        }
+        @media screen and (max-width:376px){
+            .table1{
+                padding-top: 6vh;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="nav">
         <a class="title" href="#home">Gourmet au Catering</a>
+        <div class="navbar">
+            <span class="dropbt"><img src="./burger.png" alt="" class="bpic"></span>
+            <div class="dropdown-content">
+                <a href="#table1">About</a>
+                <a href="#table2">Menu</a>
+                <a href="#table3">Contact</a>
+            </div>
+        </div>
         <div class="nav-contents">
             <a href="#table1">About</a>
             <a href="#table2">Menu</a>
             <a href="#table3">Contact</a>
+    
         </div>
     </div>
 
     <div class="burger" id="home">
-        <span style="margin-left:30px; margin-bottom:30px">Le Catering</span>
+        <span style="margin-left:30px; margin-bottom:30px" class="burg">Le Catering</span>
     </div>
 
     <div class="table1" id="table1">
