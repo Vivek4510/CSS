@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0px;
+            background-color: black;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "title search search search login cart"
+            "topp scrolls scrolls scrolls scrolls advertise"
+            "topp scrolls scrolls scrolls scrolls advertise"
+            "more scrolls scrolls scrolls scrolls advertise"
+            "more prod prod prod prod prod"
+            "more prod1 prod2 prod3 prod4 prod5"
+            "trend prod1 prod2 prod3 prod4 prod5"
+            "trend prod1 prod2 prod3 prod4 prod5"
+            "footer footer footer footer footer footer";
+            height: 100vh;
+            gap: 1vh;
+        }
+        .title{
+            grid-area: title;
+            background-color: lightseagreen;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .search{
+            grid-area: search;
+            background-color: lightcoral;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .login{
+            grid-area: login;
+            background-color: lightpink;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .cart{
+            grid-area: cart;
+            background-color: lightsalmon;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .top{
+            grid-area: topp;
+            background-color: orange;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .more{
+            grid-area: more;
+            background-color: lightblue;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .trend{
+            grid-area: trend;
+            background-color: lightcoral;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .scrolls{
+            grid-area: scrolls;
+            background-color: lightcyan;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .advertise{
+            grid-area: advertise;
+            background-color: lightgoldenrodyellow;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .prod{
+            grid-area: prod;
+            background-color: lightgray;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .prod1{
+            grid-area: prod1;
+            background-color: lightgreen;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .prod2{
+            grid-area: prod2;
+            background-color: lightpink;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .prod3{
+            grid-area: prod3;
+            background-color: lightsalmon;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .prod4{
+            grid-area: prod4;
+            background-color: lightseagreen;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .prod5{
+            grid-area: prod5;
+            background-color: lightgoldenrodyellow;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: aqua;
+            text-align: center;
+            align-content: center;
+            font-size: x-large;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Title</div>
+        <div class="search">Search Bar</div>
+        <div class="login">Log In</div>
+        <div class="cart">Cart</div>
+        <div class="top">Top Categories</div>
+        <div class="more">More Categories</div>
+        <div class="trend">Trending Searches</div>
+        <div class="scrolls">Scrolling products</div>
+        <div class="advertise">Advertisement</div>
+        <div class="prod">Trending Products</div>
+        <div class="prod1">Product 1</div>
+        <div class="prod2">Product 2</div>
+        <div class="prod3">Product 3</div>
+        <div class="prod4">Product 4</div>
+        <div class="prod5">Product 5</div>
+        <div class="footer">Footer Text</div>
+    </div>
+</body>
+</html>
